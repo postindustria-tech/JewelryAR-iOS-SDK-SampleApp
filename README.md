@@ -30,6 +30,8 @@ platform :ios, '12.0'
 
 ### 3. Add `JewelryAR` dependency to `Podfile`
 
+#### - Add sources
+
 ```ruby
 source 'git@gitlab.postindustria.com:ar-ring/jewelry-ar-sdk-ios-cocoapods-podspecs.git'
 ```
@@ -38,6 +40,12 @@ You may need to also add an explicit declaration of CocoaPods CDN source:
 
 ```ruby
 source 'https://cdn.cocoapods.org/'
+```
+
+#### - Declare a dependency in your  target's block
+
+```ruby
+pod 'JewelryAR'
 ```
 
 ### 4. Install pods
