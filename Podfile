@@ -1,4 +1,4 @@
-source 'git@gitlab.postindustria.com:ar-ring/jewelry-ar-sdk-ios-cocoapods-podspecs.git'
+source 'https://read_ios_token_2:ZJ8CH9npP4Ar4ZD2bxzS@gitlab.postindustria.com/ar-ring/jewelry-ar-sdk-ios-cocoapods-podspecs.git'
 source 'https://cdn.cocoapods.org/'
 
 use_frameworks!
@@ -9,7 +9,6 @@ use_frameworks!
 
 target 'JewelryAR_Example' do
   pod 'JewelryAR'
-  pod 'JewelryAR-UnityFramework'
 
   target 'JewelryAR_Tests' do
     inherit! :search_paths
