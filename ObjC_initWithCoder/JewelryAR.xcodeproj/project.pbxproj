@@ -7,17 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03AF2E145ECB50E04AF9A93B /* Pods_JewelryAR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DD2C366AE5C2B106D93CBA /* Pods_JewelryAR.framework */; };
 		34B84D8C288E9F500013A0F8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B84D8B288E9F500013A0F8 /* AppDelegate.m */; };
 		34B84D92288E9F500013A0F8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B84D91288E9F500013A0F8 /* ViewController.m */; };
 		34B84D95288E9F500013A0F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34B84D93288E9F500013A0F8 /* Main.storyboard */; };
 		34B84D97288E9F510013A0F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34B84D96288E9F510013A0F8 /* Assets.xcassets */; };
 		34B84D9A288E9F510013A0F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34B84D98288E9F510013A0F8 /* LaunchScreen.storyboard */; };
 		34B84D9D288E9F510013A0F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B84D9C288E9F510013A0F8 /* main.m */; };
+		51166033DC0D41A1DAE470DC /* Pods_JewelryAR_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC7FC0FC9E62273BE01A234C /* Pods_JewelryAR_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		34B84D87288E9F500013A0F8 /* JewelryAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JewelryAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		34B84D87288E9F500013A0F8 /* JewelryAR_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JewelryAR_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34B84D8A288E9F500013A0F8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		34B84D8B288E9F500013A0F8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		34B84D90288E9F500013A0F8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -27,9 +27,11 @@
 		34B84D99288E9F510013A0F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		34B84D9B288E9F510013A0F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34B84D9C288E9F510013A0F8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		604B9BA2BC39B04CEAC64FD0 /* Pods-JewelryAR_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JewelryAR_Example.release.xcconfig"; path = "Target Support Files/Pods-JewelryAR_Example/Pods-JewelryAR_Example.release.xcconfig"; sourceTree = "<group>"; };
 		968AA19C3441995E7C884A45 /* Pods-JewelryAR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JewelryAR.release.xcconfig"; path = "Target Support Files/Pods-JewelryAR/Pods-JewelryAR.release.xcconfig"; sourceTree = "<group>"; };
 		AC2EAFA992A84657C06C5C68 /* Pods-JewelryAR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JewelryAR.debug.xcconfig"; path = "Target Support Files/Pods-JewelryAR/Pods-JewelryAR.debug.xcconfig"; sourceTree = "<group>"; };
-		E3DD2C366AE5C2B106D93CBA /* Pods_JewelryAR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JewelryAR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC7FC0FC9E62273BE01A234C /* Pods_JewelryAR_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JewelryAR_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7C30C455F7EA618C4878405 /* Pods-JewelryAR_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JewelryAR_Example.debug.xcconfig"; path = "Target Support Files/Pods-JewelryAR_Example/Pods-JewelryAR_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03AF2E145ECB50E04AF9A93B /* Pods_JewelryAR.framework in Frameworks */,
+				51166033DC0D41A1DAE470DC /* Pods_JewelryAR_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,7 +59,7 @@
 		34B84D88288E9F500013A0F8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				34B84D87288E9F500013A0F8 /* JewelryAR.app */,
+				34B84D87288E9F500013A0F8 /* JewelryAR_Example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,7 +83,7 @@
 		526B5550695775C55CEDB8DF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E3DD2C366AE5C2B106D93CBA /* Pods_JewelryAR.framework */,
+				BC7FC0FC9E62273BE01A234C /* Pods_JewelryAR_Example.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -91,6 +93,8 @@
 			children = (
 				AC2EAFA992A84657C06C5C68 /* Pods-JewelryAR.debug.xcconfig */,
 				968AA19C3441995E7C884A45 /* Pods-JewelryAR.release.xcconfig */,
+				C7C30C455F7EA618C4878405 /* Pods-JewelryAR_Example.debug.xcconfig */,
+				604B9BA2BC39B04CEAC64FD0 /* Pods-JewelryAR_Example.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -98,9 +102,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		34B84D86288E9F500013A0F8 /* JewelryAR */ = {
+		34B84D86288E9F500013A0F8 /* JewelryAR_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 34B84DA0288E9F510013A0F8 /* Build configuration list for PBXNativeTarget "JewelryAR" */;
+			buildConfigurationList = 34B84DA0288E9F510013A0F8 /* Build configuration list for PBXNativeTarget "JewelryAR_Example" */;
 			buildPhases = (
 				4735C509055CBC33638B4D88 /* [CP] Check Pods Manifest.lock */,
 				34B84D83288E9F500013A0F8 /* Sources */,
@@ -111,9 +115,9 @@
 			);
 			dependencies = (
 			);
-			name = JewelryAR;
+			name = JewelryAR_Example;
 			productName = JewelryAR;
-			productReference = 34B84D87288E9F500013A0F8 /* JewelryAR.app */;
+			productReference = 34B84D87288E9F500013A0F8 /* JewelryAR_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -143,7 +147,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				34B84D86288E9F500013A0F8 /* JewelryAR */,
+				34B84D86288E9F500013A0F8 /* JewelryAR_Example */,
 			);
 		};
 /* End PBXProject section */
@@ -177,7 +181,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-JewelryAR-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-JewelryAR_Example-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -269,7 +273,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -321,7 +325,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -331,7 +335,7 @@
 		};
 		34B84DA1288E9F510013A0F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AC2EAFA992A84657C06C5C68 /* Pods-JewelryAR.debug.xcconfig */;
+			baseConfigurationReference = C7C30C455F7EA618C4878405 /* Pods-JewelryAR_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -360,7 +364,7 @@
 		};
 		34B84DA2288E9F510013A0F8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 968AA19C3441995E7C884A45 /* Pods-JewelryAR.release.xcconfig */;
+			baseConfigurationReference = 604B9BA2BC39B04CEAC64FD0 /* Pods-JewelryAR_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -399,7 +403,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		34B84DA0288E9F510013A0F8 /* Build configuration list for PBXNativeTarget "JewelryAR" */ = {
+		34B84DA0288E9F510013A0F8 /* Build configuration list for PBXNativeTarget "JewelryAR_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				34B84DA1288E9F510013A0F8 /* Debug */,
