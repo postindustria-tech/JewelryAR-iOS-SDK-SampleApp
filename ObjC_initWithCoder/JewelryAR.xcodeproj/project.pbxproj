@@ -110,6 +110,7 @@
 				34B84D83288E9F500013A0F8 /* Sources */,
 				34B84D84288E9F500013A0F8 /* Frameworks */,
 				34B84D85288E9F500013A0F8 /* Resources */,
+				0B8009D4822CE326D4DAC46F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -166,6 +167,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0B8009D4822CE326D4DAC46F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JewelryAR_Example/Pods-JewelryAR_Example-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JewelryAR_Example/Pods-JewelryAR_Example-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JewelryAR_Example/Pods-JewelryAR_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		4735C509055CBC33638B4D88 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
