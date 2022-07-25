@@ -1,17 +1,17 @@
 //
-//  ViewController.m
+//  ARViewController.m
 //  JewelryAR
 //
 //  Created by Maxim Kucherov on 25.07.2022.
 //
 
-#import "ViewController.h"
+#import "ARViewController.h"
 
-@interface ViewController ()
+@interface ARViewController ()
 
 @end
 
-@implementation ViewController
+@implementation ARViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

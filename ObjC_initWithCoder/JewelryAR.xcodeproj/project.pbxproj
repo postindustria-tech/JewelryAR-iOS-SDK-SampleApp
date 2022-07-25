@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		34B84D8C288E9F500013A0F8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B84D8B288E9F500013A0F8 /* AppDelegate.m */; };
-		34B84D92288E9F500013A0F8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B84D91288E9F500013A0F8 /* ViewController.m */; };
+		34B84D92288E9F500013A0F8 /* ARViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B84D91288E9F500013A0F8 /* ARViewController.m */; };
 		34B84D95288E9F500013A0F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34B84D93288E9F500013A0F8 /* Main.storyboard */; };
 		34B84D97288E9F510013A0F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34B84D96288E9F510013A0F8 /* Assets.xcassets */; };
 		34B84D9A288E9F510013A0F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34B84D98288E9F510013A0F8 /* LaunchScreen.storyboard */; };
@@ -20,8 +20,8 @@
 		34B84D87288E9F500013A0F8 /* JewelryAR_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JewelryAR_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34B84D8A288E9F500013A0F8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		34B84D8B288E9F500013A0F8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		34B84D90288E9F500013A0F8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		34B84D91288E9F500013A0F8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		34B84D90288E9F500013A0F8 /* ARViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARViewController.h; sourceTree = "<group>"; };
+		34B84D91288E9F500013A0F8 /* ARViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARViewController.m; sourceTree = "<group>"; };
 		34B84D94288E9F500013A0F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		34B84D96288E9F510013A0F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34B84D99288E9F510013A0F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -69,8 +69,8 @@
 			children = (
 				34B84D8A288E9F500013A0F8 /* AppDelegate.h */,
 				34B84D8B288E9F500013A0F8 /* AppDelegate.m */,
-				34B84D90288E9F500013A0F8 /* ViewController.h */,
-				34B84D91288E9F500013A0F8 /* ViewController.m */,
+				34B84D90288E9F500013A0F8 /* ARViewController.h */,
+				34B84D91288E9F500013A0F8 /* ARViewController.m */,
 				34B84D93288E9F500013A0F8 /* Main.storyboard */,
 				34B84D96288E9F510013A0F8 /* Assets.xcassets */,
 				34B84D98288E9F510013A0F8 /* LaunchScreen.storyboard */,
@@ -213,7 +213,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34B84D92288E9F500013A0F8 /* ViewController.m in Sources */,
+				34B84D92288E9F500013A0F8 /* ARViewController.m in Sources */,
 				34B84D8C288E9F500013A0F8 /* AppDelegate.m in Sources */,
 				34B84D9D288E9F510013A0F8 /* main.m in Sources */,
 			);
