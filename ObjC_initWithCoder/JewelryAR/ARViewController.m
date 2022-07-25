@@ -6,9 +6,10 @@
 //
 
 #import "ARViewController.h"
+@import JewelryAR;
 
 @interface ARViewController ()
-
+@property (weak, nonatomic) IBOutlet JewelryARView *arView;
 @end
 
 @implementation ARViewController
