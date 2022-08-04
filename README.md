@@ -1,9 +1,5 @@
 # Jewelry AR SDK SampleApp
 
-[[_TOC_]]
-
----
-
 ## Running the Sample App project
 
 Simply run `pod install` and launch the app from `JewelryAR.xcworkspace`.
