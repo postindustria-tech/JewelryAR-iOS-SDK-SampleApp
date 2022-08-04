@@ -29,7 +29,7 @@ platform :ios, '12.0'
 #### - Add sources
 
 ```ruby
-source 'git@gitlab.postindustria.com:ar-ring/jewelry-ar-sdk-ios-cocoapods-podspecs.git'
+source 'https://read_ios_token_2:ZJ8CH9npP4Ar4ZD2bxzS@gitlab.postindustria.com/ar-ring/jewelry-ar-sdk-ios-cocoapods-podspecs.git'
 ```
 
 You may need to also add an explicit declaration of CocoaPods CDN source:
