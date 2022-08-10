@@ -1,7 +1,7 @@
 PODS:
-  - JewelryAR (1.35.2):
-    - JewelryAR-UnityFramework (= 1.35.1)
-  - JewelryAR-UnityFramework (1.35.1)
+  - JewelryAR (1.42.0):
+    - JewelryAR-UnityFramework (= 1.42.0)
+  - JewelryAR-UnityFramework (1.42.0)
 
 DEPENDENCIES:
   - JewelryAR
@@ -12,8 +12,8 @@ SPEC REPOS:
     - JewelryAR-UnityFramework
 
 SPEC CHECKSUMS:
-  JewelryAR: 42f76426e6140655c0315807f16d4515a9bdb19b
-  JewelryAR-UnityFramework: 07aaae89d86f11cfb0992caafc84d315e6e856c0
+  JewelryAR: 923bc5db3dd59afbd3b3a380404ad60583bf1734
+  JewelryAR-UnityFramework: 791d434a7f761ec8ec6306f8d3b9bd583401baea
 
 PODFILE CHECKSUM: d48d20fb0ee9193157b64fe218666f009abc5408
 
