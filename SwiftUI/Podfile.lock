@@ -1,0 +1,24 @@
+PODS:
+  - JewelryAR (1.42.0):
+    - JewelryAR-UnityFramework (= 1.42.0)
+  - JewelryAR-SwiftUI (1.42.0):
+    - JewelryAR (= 1.42.0)
+  - JewelryAR-UnityFramework (1.42.0)
+
+DEPENDENCIES:
+  - JewelryAR-SwiftUI
+
+SPEC REPOS:
+  "https://read_ios_token_2:ZJ8CH9npP4Ar4ZD2bxzS@gitlab.postindustria.com/ar-ring/jewelry-ar-sdk-ios-cocoapods-podspecs.git":
+    - JewelryAR
+    - JewelryAR-SwiftUI
+    - JewelryAR-UnityFramework
+
+SPEC CHECKSUMS:
+  JewelryAR: 923bc5db3dd59afbd3b3a380404ad60583bf1734
+  JewelryAR-SwiftUI: 03eca5b345a1733393c7ed8d636e0d0c6820351b
+  JewelryAR-UnityFramework: 791d434a7f761ec8ec6306f8d3b9bd583401baea
+
+PODFILE CHECKSUM: 829ab642dd29c450915286dcbf89b710ffb51f98
+
+COCOAPODS: 1.11.3

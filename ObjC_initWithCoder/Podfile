@@ -1,0 +1,10 @@
+source 'https://read_ios_token_2:ZJ8CH9npP4Ar4ZD2bxzS@gitlab.postindustria.com/ar-ring/jewelry-ar-sdk-ios-cocoapods-podspecs.git'
+source 'https://cdn.cocoapods.org/'
+
+platform :ios, '12.0'
+
+target 'JewelryAR_Example' do
+  use_frameworks!
+  
+  pod 'JewelryAR'
+end
