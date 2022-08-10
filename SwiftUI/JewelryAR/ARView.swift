@@ -45,16 +45,6 @@ struct ARView: View {
                     Spacer()
                 }
             }
-            HStack {
-                Spacer()
-                Text("Pending: \(String(describing: arSceneState?.ringStates?.pendingReplacement?.modelID))")
-                Spacer()
-            }
-            HStack {
-                Spacer()
-                Text("Displayed: \(String(describing: arSceneState?.ringStates?.displayedRing?.modelID))")
-                Spacer()
-            }
         }
         .padding()
     }

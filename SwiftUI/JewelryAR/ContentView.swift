@@ -14,7 +14,7 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            List(["73", "74", "75", "76", "1", "2", "345", "346", "347", "348", "349"].map(ModelInfo.init)) { modelInfo in
+            List(["73"].map(ModelInfo.init)) { modelInfo in
                 NavigationLink {
                     ARView(modelID: modelInfo.id)
                         .navigationTitle("Model #\(modelInfo.id)")
