@@ -16,7 +16,7 @@ struct ContentView: View {
             List(Self.allModels) { modelRef in
                 NavigationLink {
                     ARView(model: modelRef)
-                        .navigationTitle("Model #\(modelRef.id)")
+                        .navigationTitle("Model \(modelRef.id)")
                 } label: {
                     Text("Open AR - model \(modelRef.id)")
                 }
