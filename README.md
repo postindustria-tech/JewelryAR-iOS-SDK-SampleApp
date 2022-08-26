@@ -44,6 +44,12 @@ source 'https://cdn.cocoapods.org/'
 pod 'JewelryAR'
 ```
 
+:exclamation: There is also an optional SwiftUI wrapper available:
+
+```ruby
+pod 'JewelryAR-SwiftUI'
+```
+
 ### 4. Install pods
 
 ```bash
@@ -68,7 +74,7 @@ pod install
  class AppDelegate: UIResponder, UIApplicationDelegate {
 ```
 
-##### - Create `main.swift` file
+##### - Create `main.swift` file (and call `UIApplicationMain`)
 
 Swift 4.2 / Swift 5:
 
@@ -100,7 +106,31 @@ _ = UIApplicationMain(
 )
 ```
 
-#### (b) If your app's `main` file is in Swift
+#### (b) If your app is in SwiftUI and has no `main.swift` file
+
+:warning: While following the instructions below, please replace `JewelryARApp` with an actual name of your application's App struct.
+
+##### - Remove `@main` attribute from `App` struct
+
+```diff
+ import SwiftUI
+ 
+-@main
+ struct JewelryARApp: App {
+```
+
+##### - Create `main.swift` file (and call `App.main`)
+
+```swift
+import Foundation
+import JewelryAR
+
+InitArgs(CommandLine.argc, CommandLine.unsafeArgv)
+
+JewelryARApp.main()
+```
+
+#### (c) If your app's `main` file is in Swift
 
 Add lines
 
@@ -112,7 +142,7 @@ InitArgs(CommandLine.argc, CommandLine.unsafeArgv)
 
 before the call to [[UIApplicationMain]](https://developer.apple.com/documentation/uikit/1622933-uiapplicationmain).
 
-#### (c) If your app's `main` file is in Objective-C
+#### (d) If your app's `main` file is in Objective-C
 
 ```diff
  #import <UIKit/UIKit.h>
@@ -130,9 +160,9 @@ before the call to [[UIApplicationMain]](https://developer.apple.com/documentati
 
 ---
 
-## Adding Jewelry AR View in your application
+## Adding Jewelry AR View to `UIViewController`
 
-### 0. Import the module
+### 0. Import `JewelryAR` module
 
 ```swift
 import JewelryAR
@@ -158,4 +188,51 @@ view.addConstraints([
 arView.apiURL = "https://stage-api-ar.postindustria.com/v1"
 arView.apiKey = "spWyH9aA-OEL-Bl27KHAeQ"
 arView.modelID = "73"
+```
+
+---
+
+## Adding Jewelry AR View to SwiftUI view
+
+### 0. Import `JewelryAR_SwiftUI` module
+
+```swift
+import JewelryAR_SwiftUI
+```
+
+### 1. Add `JewelryARView` to your body
+
+```swift
+JewelryARView(apiURL: "https://stage-api-ar.postindustria.com/v1",
+              apiKey: "spWyH9aA-OEL-Bl27KHAeQ",
+              modelID: "73")
+```
+
+---
+
+## Tracking AR Scene state in SwiftUI app
+
+### 1. Declare state variable
+
+```swift
+@State var arSceneState: ARSceneState?
+```
+
+### 2. Pass a binding to this variable into `JewelryARView`
+
+```swift
+JewelryARView(apiURL: "https://stage-api-ar.postindustria.com/v1",
+              apiKey: "spWyH9aA-OEL-Bl27KHAeQ",
+              modelID: "73",
+              arSceneState: $arSceneState)
+```
+
+### 3. React to changes in `arSceneState`
+
+```swift
+HStack {
+    Spacer()
+    Text("Displayed ring: \(arSceneState?.ringStates?.displayedRing?.model?.id ?? "nil")")
+    Spacer()
+}
 ```
