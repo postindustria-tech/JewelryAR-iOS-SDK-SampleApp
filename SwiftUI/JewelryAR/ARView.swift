@@ -10,7 +10,7 @@ import JewelryAR
 import JewelryAR_SwiftUI
 
 struct ARView: View {
-    let modelID: String?
+    let model: ModelRef?
     
     @State var arSceneState: ARSceneState?
     
@@ -18,7 +18,9 @@ struct ARView: View {
         ZStack {
             JewelryARView(apiURL: "https://stage-api-ar.postindustria.com/v1",
                           apiKey: "spWyH9aA-OEL-Bl27KHAeQ",
-                          modelID: modelID,
+                          modelID: model?.modelID,
+                          modelCustomID: model?.customID,
+                          modelName: model?.name,
                           arSceneState: $arSceneState)
             overlay
         }
@@ -37,13 +39,25 @@ struct ARView: View {
                     Spacer()
                 }
             }
-            if let progress = arSceneState?.ringStates?.downloadOperations?.first(where: { $0.tag == modelID })?.progress
+            if let model = model,
+                let modelOperations = arSceneState?.ringStates?.downloadOperations,
+               let progress = modelOperations.first(where: { $0.model.canBeUsedAs(modelRef: model) == true })?.progress
             {
                 HStack {
                     Spacer()
                     Text("Ring model download: \(progress * 100)%")
                     Spacer()
                 }
+            }
+            HStack {
+                Spacer()
+                Text("Pending: \(arSceneState?.ringStates?.pendingReplacement?.model?.id ?? "nil")")
+                Spacer()
+            }
+            HStack {
+                Spacer()
+                Text("Displayed: \(arSceneState?.ringStates?.displayedRing?.model?.id ?? "nil")")
+                Spacer()
             }
         }
         .padding()
@@ -52,7 +66,7 @@ struct ARView: View {
 
 struct ARView_Previews: PreviewProvider {
     static var previews: some View {
-        ARView(modelID: "1")
-        ARView(modelID: nil)
+        ARView(model: ModelRef(modelID: "1"))
+        ARView(model: nil)
     }
 }

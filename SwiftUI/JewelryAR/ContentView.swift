@@ -6,20 +6,19 @@
 //
 
 import SwiftUI
+import JewelryAR
 
 struct ContentView: View {
-    struct ModelInfo: Identifiable {
-        var id: String
-    }
+    static let allModels = ["73"].map { ModelRef(modelID: $0) }
     
     var body: some View {
         NavigationView {
-            List(["73"].map(ModelInfo.init)) { modelInfo in
+            List(Self.allModels) { modelRef in
                 NavigationLink {
-                    ARView(modelID: modelInfo.id)
-                        .navigationTitle("Model #\(modelInfo.id)")
+                    ARView(model: modelRef)
+                        .navigationTitle("Model #\(modelRef.id)")
                 } label: {
-                    Text("Open AR - model #\(modelInfo.id)")
+                    Text("Open AR - model \(modelRef.id)")
                 }
             }
             .navigationTitle("Root View")
