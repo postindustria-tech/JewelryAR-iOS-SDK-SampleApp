@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1340"
+   LastUpgradeVersion = "1400"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "34B84D86288E9F500013A0F8"
+               BlueprintIdentifier = "34CD87AA288EDDEA00725483"
                BuildableName = "JewelryAR_Example.app"
                BlueprintName = "JewelryAR_Example"
                ReferencedContainer = "container:JewelryAR.xcodeproj">
@@ -45,7 +45,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "34B84D86288E9F500013A0F8"
+            BlueprintIdentifier = "34CD87AA288EDDEA00725483"
             BuildableName = "JewelryAR_Example.app"
             BlueprintName = "JewelryAR_Example"
             ReferencedContainer = "container:JewelryAR.xcodeproj">
@@ -62,7 +62,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "34B84D86288E9F500013A0F8"
+            BlueprintIdentifier = "34CD87AA288EDDEA00725483"
             BuildableName = "JewelryAR_Example.app"
             BlueprintName = "JewelryAR_Example"
             ReferencedContainer = "container:JewelryAR.xcodeproj">
